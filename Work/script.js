@@ -1,4 +1,5 @@
 'use strict';
+
 // let object = {
 //     auto: false,
 //     uplayCode: 3245,
@@ -6,8 +7,8 @@
 // };
 // console.log (object.Name);
 
-// let OBject = ["Ronix", 23453, false, "orange.png"]
-// console.log (OBject[3])
+// let OBject = ["Ronix", 23453, false, "orange.png"];
+// console.log (OBject[3]);
 
 // const answer = +prompt("Do you have 18?","18");
 // console.log(answer + 10);
@@ -22,6 +23,8 @@
 
 
 // console.log (121 === "60");
+
+// // Условия
 
 // let decl = 11;
 // let incr = 9;
@@ -54,6 +57,7 @@
 //     }
 // } 
 
+// //Функции
 // let personalMovieDB = {
 //     count: 22,
 // };
@@ -64,7 +68,7 @@
 // console.log(calc(5, 6));
 
 // function showSmt(a) {
-//     console.log(a)
+//     console.log(a);
 // }
 
 // showSmt("haha");
@@ -99,49 +103,49 @@
 // console.log("Цвет заднего фона", bg);
 
 
-let arr = [1, 2, 3, "lockdown"];
+// let arr = [1, 2, 3, "lockdown"];
 
-arr.forEach(function(elem, index, arr){
-    console.log(`${elem} имеет значение ${index} и находится в ${arr}`);
-});
-arr.push("lockdown");
-console.log(arr);
+// arr.forEach(function(elem, index, arr){
+//     console.log(`${elem} имеет значение ${index} и находится в ${arr}`);
+// });
+// arr.push("lockdown");
+// console.log(arr);
 
 // let goods = prompt("Напишите сюда товары", "");
 // let products = goods.split(", ");
 // console.log(products);
 
-const objec = {
-    a: 1,
-    b: 23,
-    c: 38
-};
+// const objec = {
+//     a: 1,
+//     b: 23,
+//     c: 38
+// };
 
-function copying(mainObj) {
-    let newObj = {};
+// function copying(mainObj) {
+//     let newObj = {};
 
-    let key;
-    for(key in mainObj){
-        newObj[key] = mainObj[key];
-    }
-    return newObj;
-}
+//     let key;
+//     for(key in mainObj){
+//         newObj[key] = mainObj[key];
+//     }
+//     return newObj;
+// }
 
-let newObjec = copying(objec);
-newObjec.c = 44;
-console.log(objec);
-console.log(newObjec);
+// let newObjec = copying(objec);
+// newObjec.c = 44;
+// console.log(objec);
+// console.log(newObjec);
 
-function slova(main, second){
-    for(let i = 1; i <= 3; i++){
-        console.log(main + second);
-    }
-    return(main + second);
-}
+// function slova(main, second){
+//     for(let i = 1; i <= 3; i++){
+//         console.log(main + second);
+//     }
+//     return(main + second);
+// }
 
-slova("Valera", "Nossov");
+// slova("Valera", "Nossov");
 
-// let soldier = {
+//  let soldier = {
 //    health: 100,
 //    armor: 150,
 //    damage: 30,
@@ -157,39 +161,87 @@ slova("Valera", "Nossov");
 // soldier.activity();
 
 
-let soldier = {
-    health: 100,
-    armor: 150,
-    damage: 30,
-    SayEmotion: function emotion() {
-        console.log("Let's roll!");
-    }
-};
-let soldier1 = {
-    health: 50,
-}; 
+// let soldier = {
+//     health: 100,
+//     armor: 150,
+//     damage: 30,
+//     SayEmotion: function emotion() {
+//         console.log("Let's roll!");
+//     }
+// };
+// let soldier1 = {
+//     health: 50,
+// }; 
 
-Object.setPrototypeOf(soldier1, soldier);
-console.log(soldier1.armor);
-soldier1.SayEmotion();
+// Object.setPrototypeOf(soldier1, soldier);
+// console.log(soldier1.armor);
+// soldier1.SayEmotion();
 
-let soldier2 = Object.create(soldier);
-soldier2.SayEmotion();
+// let soldier2 = Object.create(soldier);
+// soldier2.SayEmotion();
 
-// To string
-// 1)
-console.log(typeof(String(56)));
-//2)
-console.log(typeof(5 + '6'));
-// To Number
-//1)
-console.log(typeof(Number("sdsd")));
-//2)
-console.log(typeof(+"6"));
-//3)
-console.log(typeof(parseInt(5 + "6")));
-// To boolean
-//1)
-// 0, null, NaN, undefined, "", = false
-console.log(typeof(Boolean(0)));
-console.log(typeof(!!0));
+
+
+// //Передача типов
+// // To string
+// // 1)
+// console.log(typeof(String(56)));
+// //2)
+// console.log(typeof(5 + '6'));
+// // To Number
+// //1)
+// console.log(typeof(Number("sdsd")));
+// //2)
+// console.log(typeof(+"6"));
+// //3)
+// console.log(typeof (parseInt(5 + "6")));
+// // To boolean
+// //1)
+// // 0, null, NaN, undefined, "", = false
+// console.log(typeof (Boolean(0)));
+// console.log(typeof (!!0));
+
+
+
+//Работа с элементами со страницы
+
+// const btn = document.querySelectorAll("button"); //Выбирает то, что указываешь
+const text = document.querySelector("p"); //Выбирает первый элемент 
+const h1 = document.getElementById("h1"); //Ну тут и так все понятно
+const shape = document.getElementById("shape");
+//const btns = document.getElementsByTagName("button");
+const btns = document.querySelectorAll(".button");
+
+//изменение css значений
+
+
+// btns[0].style.color = "green";
+// btns[0].style.width = "300px";
+// btns[0].style.height = "150px";
+
+// shape.style.width = "300px";
+// shape.style.backgroundColor = "red";
+// btns[0].style.cssText = 'color: violet; width: 300px';
+
+//Это для одного элемента. Его нужно выбирать. Чтобы одно и то же свойство указать нескольким элементам надо:
+
+// for(let i = 0; i < btns.length; i++) {
+//     btns[i].style.cssText = "color: black; width: 100px";
+// }
+
+btns.forEach(elem =>{
+    elem.style.cssText = "color: black; width: 100px";
+});
+
+//Создание новых элементов
+
+//const textNode = document.createTextNode("Something");
+const div = document.createElement("div");
+div.classList.add("black");
+document.body.appendChild(div);
+
+
+
+
+
+
