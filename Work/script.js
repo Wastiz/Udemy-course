@@ -203,14 +203,18 @@
 
 
 
-//Работа с элементами со страницы
+//РАБОТА С ЭЛЕМЕНТАМИ СО СТРАНИЦЫ
 
-// const btn = document.querySelectorAll("button"); //Выбирает то, что указываешь
+const btn = document.querySelectorAll("button"); //Выбирает все то, что указываешь
+const btns = document.querySelectorAll(".button");
+const wrapper = document.querySelectorAll(".wrapper");
+const circle = document.querySelectorAll(".circle");
 const text = document.querySelector("p"); //Выбирает первый элемент 
 const h1 = document.getElementById("h1"); //Ну тут и так все понятно
 const shape = document.getElementById("shape");
-//const btns = document.getElementsByTagName("button");
-const btns = document.querySelectorAll(".button");
+const btns1 = document.getElementsByTagName("button"); //Выбирает все элементы тега
+const hearts = document.getElementsByClassName("heart"); //Выбирает все элементы этого класса(они переходят в массив)
+
 
 //изменение css значений
 
@@ -229,16 +233,37 @@ const btns = document.querySelectorAll(".button");
 //     btns[i].style.cssText = "color: black; width: 100px";
 // }
 
-btns.forEach(elem =>{
-    elem.style.cssText = "color: black; width: 100px";
-});
+// btns.forEach(elem => {
+//     elem.style.cssText = "color: black; width: 100px";
+// });  //Это чтобы изменения применялись ко всем элементам
 
 //Создание новых элементов
 
 //const textNode = document.createTextNode("Something");
+
 const div = document.createElement("div");
 div.classList.add("black");
-document.body.appendChild(div);
+// document.body.append(div); //Элемент появляется в конце body
+// wrapper.apend(div); //Элемент появляется после прописанного элемента
+// wrapper.prepend(div); //Элемент появляется до прописанного элемента
+//hearts[0].before(div); //Элемент вставляется перед прописанным в начале элементом
+//hearts[0].after(div); //Элемент вставляется после прописанного в начале элемента
+//circle[0].remove(); //тут все ясно
+//circle[0].replaceWith(hearts[0]); //Вставляет начальный элемент вместо элемента в конце
+
+wrapper.insertBefore(div, hearts[0]); //Старый метод before
+wrapper.insertAfter(div, hearts[0]); //Старый метод after
+
+div.innerHTML = "<h1>Hello World</h1>"; //Маст хэв команда добавляет в Элемент любую html структуру
+div.textContent = "hello"; //Добавляет в элемент только текст. Нужен для безопасности
+div.insertAdjacentHTML("beforebegin", "<h2>hello</h2>"); //вставляет html код прямо перед элементом
+div.insertAdjacentHTML("afterbegin", "<h2>hello</h2>"); //вставляет html код в начало элемента
+div.insertAdjacentHTML("beforeend", "<h2>hello</h2>"); //вставляет html код в конец элемента
+div.insertAdjacentHTML("afterend", "<h2>hello</h2>"); //вставляет html код прямо после элемента
+
+
+
+
 
 
 
