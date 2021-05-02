@@ -205,8 +205,8 @@
 
 //РАБОТА С ЭЛЕМЕНТАМИ СО СТРАНИЦЫ
 
-const btn = document.querySelectorAll("button"); //Выбирает все то, что указываешь
-const btns = document.querySelectorAll(".button");
+//const btn = document.querySelectorAll("button"); //Выбирает все то, что указываешь
+const btns = document.querySelector(".button");
 const wrapper = document.querySelectorAll(".wrapper");
 const circle = document.querySelectorAll(".circle");
 const text = document.querySelector("p"); //Выбирает первый элемент 
@@ -251,22 +251,72 @@ div.classList.add("black");
 //circle[0].remove(); //тут все ясно
 //circle[0].replaceWith(hearts[0]); //Вставляет начальный элемент вместо элемента в конце
 
-wrapper.insertBefore(div, hearts[0]); //Старый метод before
-wrapper.insertAfter(div, hearts[0]); //Старый метод after
+// wrapper.insertBefore(div, hearts[0]); //Старый метод before
+// wrapper.insertAfter(div, hearts[0]); //Старый метод after
 
-div.innerHTML = "<h1>Hello World</h1>"; //Маст хэв команда добавляет в Элемент любую html структуру
-div.textContent = "hello"; //Добавляет в элемент только текст. Нужен для безопасности
-div.insertAdjacentHTML("beforebegin", "<h2>hello</h2>"); //вставляет html код прямо перед элементом
-div.insertAdjacentHTML("afterbegin", "<h2>hello</h2>"); //вставляет html код в начало элемента
-div.insertAdjacentHTML("beforeend", "<h2>hello</h2>"); //вставляет html код в конец элемента
-div.insertAdjacentHTML("afterend", "<h2>hello</h2>"); //вставляет html код прямо после элемента
-
-
+// div.innerHTML = "<h1>Hello World</h1>"; //Маст хэв команда добавляет в Элемент любую html структуру
+// div.textContent = "hello"; //Добавляет в элемент только текст. Нужен для безопасности
+// div.insertAdjacentHTML("beforebegin", "<h2>hello</h2>"); //вставляет html код прямо перед элементом
+// div.insertAdjacentHTML("afterbegin", "<h2>hello</h2>"); //вставляет html код в начало элемента
+// div.insertAdjacentHTML("beforeend", "<h2>hello</h2>"); //вставляет html код в конец элемента
+// div.insertAdjacentHTML("afterend", "<h2>hello</h2>"); //вставляет html код прямо после элемента
 
 
+//События (очень важно)
+
+//Обычный клик
+
+// btns.onclick = function() {
+//     alert("click");
+// };
+
+// лучше не использовать
+
+// btns.addEventListener("click", () => {
+//     btns.style.color = "yellow";
+// });
+
+// btns.addEventListener("mouseenter", (e)=> {
+//      e.target.remove();
+// });
+
+//target - элемент, на котором происходят все события
+
+//также можно создавать функции, а потом их задавать слушателю
+
+let i = 0;
+const deleteElement = (e) => {
+     console.log(e.target);
+     i++;
+     if (i == 1) {
+          btns.removeEventListener('click, deleteElement');
+     }
+};
+
+btns.addEventListener('click', deleteElement);
+
+//Чтобы браузер не использовал стандартные поведения
+
+const link = document.querySelector('a');
+
+link.addEventListener('click', function(e){
+     e.preventDefault();
+     console.log(e.target);
+});
 
 
+//Для того, чтобы навесить слушателя на много элементов надо:
 
+// wrapper.forEach(item => {
+//      item.addEventListener('click', function(){
+//           console.log("I love you");
+//      });
+// });
 
+function love() {
+     console.log("I love you");
+}
 
-
+wrapper.forEach(item => {
+     item.addEventListener('click', love, {once: true});
+});
