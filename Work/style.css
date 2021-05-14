@@ -92,3 +92,8 @@
 	margin-top: 30px;
 	color: #fff;
 }
+.boxTouch{
+    width: 100px;
+    height: 100px;
+    background-color:yellow;
+}

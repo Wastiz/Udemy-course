@@ -320,3 +320,25 @@ function love() {
 wrapper.forEach(item => {
      item.addEventListener('click', love, {once: true});
 });
+
+// Навигация по DOM
+console.log(document.head);
+console.log(document.documentElement);
+
+//события на мобилках
+//addEventListener(//"touchstart" выполняется действия при касании
+                 //'touchmove' выполняется дествие при нажатии и дальнейшем ведении
+                 //'touchend' как только оторвался от экрана, выполяется дествие
+                 //'touchenter' как только палец зашел за пределы элемента
+                 //'touchleave' как только палец вышел за элемент
+                 //'touchcancel' когда не регается касание
+
+document.addEventListener("DOMContentLoaded", function(){
+
+});
+
+//Динамические скрипты
+
+const script = document.createElement("script");
+script.src = "dynamicScript.js";
+document.body.append(script);
