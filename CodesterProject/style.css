@@ -1,9 +1,116 @@
 body{
     background-color: #393939;
 }
+#mainDiv{
+  display: flex;
+  flex-direction: row;
+}
+#block1{
+  width: 400px;
+  height: 1080px;
+  background-color: #656F77;
+}
+#block2{
+  padding-left: 30px;
+}
 h1{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding-top: 20px;
 }
 .div1{
-    display: inline-block;
+   display: flex;
+   align-items: center;
+   /* width: 40%; */
+   /* justify-content: space-around; */
+   
 }
+.divBlock1{
+    display: flex;
+    flex-direction: column;
+}
+#search{
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding-left: 50px;
+}
+.divElement1{
+  padding: 5px;
+}
+.div2{
+  display: flex;
+  flex: row;
+  align-items: center;
+  margin-top: -10px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+}
+h2{
+  padding-left: 10px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input_inbox{
+  /* position: absolute; */
+  box-sizing: border-box;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  width: 550%;
+  height: 45px;
+  line-height: 50px;
+  font-size: 16px;
+  background: rgba(196,196,196,0.29);
+  border: 1px solid rgba(0,0,0,0.19);
+  padding: 0 15px;
+  outline: none;
+  border-radius: 4px;
+}
+.button_inbox{
+  display: block;
+  width: 170px;
+  height: 45px;
+  margin-left: 22px;
+  margin-top: 10px;
+  background: #C54850;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#hr1{
+  width: 99%;
+}
+#hr1_inbox{
+  position: absolute;
+  width: 78%;
+}
+#aElements{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+}
+span{
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+#personalCalendar{
+  position: absolute;
+  width: 75%;
+  height: 115%
+}
+#inboxTask{
+  margin-top: 18px;
+}
+
+
+
