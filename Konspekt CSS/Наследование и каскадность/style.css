@@ -1,0 +1,32 @@
+/* p{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+.style1{
+    background-color: aqua;
+    color: black;
+    border: none !important;
+}
+#style2{
+    background-color: pink;
+    border: 2px solid black;
+}
+p{
+    background-color: gray;
+} */
+body{
+    color: red;
+    border: 2px solid gray;
+}
+div{
+    border: inherit;
+}
+p{
+    border: inherit
+}
+/* 
+элементы от родителей могут наследовать восновном только цвета текстов шрифты, и тд
+Чтобы наследовать жругие параметры стидей, надо применять inherit  */
+/* Нужно помнит, что разные браузеры имеют разные дефолтные параметры стилей( по типу отступы, шрифты, цвета и тд)
+Для кроссбраузерности нужно использовать либо css reset, либо css normalize */

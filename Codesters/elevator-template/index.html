@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th><h1>Floor</h1></th>
+                <th>
+                    <div id="controls">
+                        <img class="btn-elevator" src="arrow-up.png" />
+                        <h1 id="floor-number">0</h1>
+                        <img class="btn-elevator" src="arrow-down.png" />
+                    </div>
+                </th>
+                <th><h1>People</h1></th>
+            </tr>
+            <tr>
+                <td><h1>-1</h1></td>
+                <td><img id="floor--1" class="img-elevator" src="elevator.png"/></td>
+                <td><h1 class="people-floor">0</h1></td>
+            </tr>
+            <tr>
+                <td><h1>0</h1></td>
+                <td><img id="floor-0" class="img-elevator" src="elevator-door.png"/></td>
+                <td><h1 class="people-floor">0</h1></td>
+            </tr>
+            <tr>
+                <td><h1>1</h1></td>
+                <td><img id="floor-1" class="img-elevator" src="elevator-door.png"/></td>
+                <td><h1 class="people-floor">0</h1></td>
+            </tr>
+            <tr>
+                <td><h1>2</h1></td>
+                <td><img id="floor-2" class="img-elevator" src="elevator-door.png"/></td>
+                <td><h1 class="people-floor">0</h1></td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+        <script>
+        const minFloor = -1;
+        const maxFloor = 2;
+        
+        var floor = 2;
+        var people = 0;
+            
+            
+        
+          
+        /*
+        --------------------
+        Some tips and clues:
+        --------------------
+        
+        Define and use your functions to move the elevator, create random people, pick and drop them.
+        
+        Remember that document.getElementById("some-id").src = "whatever.png" can change the source image.                
+        
+        Remember that you can create a string appending two other ones.
+        var floor = 0;
+        var test = "floor-" + floor + ".png"; <-- This will be floor-0.png
+        */        
+        </script>        
+    </body>
+</html>

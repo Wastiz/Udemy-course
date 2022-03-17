@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<div class="auth">
+  <center>
+    <h2>Chat app</h2>
+  </center>
+<div class="auth1">
+<input type="mail" autocomplete="off" required class="email" title="email">
+<label>Email</label>
+</div>
+<div class="auth1">
+<input type="password" autocomplete="off" required title="password">
+<label>Password</label>
+</div>
+<button class="login" title="Login in">Login in </button>
+<span>or</span>
+<button class="signup" title="Sign up">Sign up</button>
+<br><hr><button onclick="changeTheme">Theme</button>
+<p id="feedback" title="feedback">
+The email address is badly formatted. 
+</p>
+</div>
+
+
+<div class="chatApp">
+
+<div class="channels">
+<h1>Channels</h1>
+<ul class="channelsList">
+<li class="sellected">#general</li>
+<li>#random</li>
+<li>#art</li>
+<li>#games</li>
+</ul>
+<button class="back">Back</button>
+
+</div>
+
+<div class="chat">
+  <h1>#general</h1>
+
+  <div class="chatlog">
+
+
+</div>
+<div class="bottomM">
+  <input type="text" placeholder="Type a message" class="txtmes">
+<button class="enterBut">Send</button>
+</div>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script> 
+<script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.first {
+    display: none;
+  }
+  
+  .second {
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    color: transparent;
+  }
+  

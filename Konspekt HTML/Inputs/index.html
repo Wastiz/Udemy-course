@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <p>Простой инпут для ввода символов</p>
+    <input min="0" max="100" step="5" type="number">
+    <p>Инпут для ввода только чисел. Появляются стредочки рядом</p>
+    <p>Атрибут стэп дает возможность при нажатии на стрелочку добавить или вычесть какое-то число</p>
+    <input type="password">
+    <p>Тот же инпут, только символы не отображаются</p>
+    <input type="range">
+    <p>Инпут с ползунком. Надо подключать к js</p>
+    <input type="date">
+    <p>инпут, который дает выбрать дату</p>
+    <input type="color">
+    <p>Очень специфический инпут. Применяется только в веб приложениях и то врятли</p>
+    <input type="submit">
+    <p>Инпут для форм. При клике отправляется форма в датабазу</p>
+    <input type="reset">
+    <p>Инпут для сброса формы. Чтобы изменить лейблы у этих  инпутов, используем атрибуты value</p>
+    <input list="list">
+    <datalist id="list">
+        <option value="FE"></option>
+        <option value="BE"></option>
+        <option value="FS"></option>
+    </datalist>
+    <p>С таким атрибутом можно добавить datalist при этом можно вводить и свои символы</p>
+    <input type="email">
+    <p>Инпут для ввода емайл адресса. При неправильном адресе форма не будет отправляться</p>
+    <input type="url">
+    <p>Этот инпут проверяет валидность адресса</p>
+    <input type="tel">
+    <p>Инпут для ввода телефона. Отличается только раскладкой клавиатуры на телефоне</p>
+    <input type="search">
+    <p>Инпут для ввода поисковых запросов. Опять же нужно для семантики</p>
+    <input type="file" multiple>
+    <p>Дает возможность загрузить несколько файлов</p>
+    <label><input type="checkbox">Front-end</label>
+    <label><input type="checkbox">Back-end</label>
+    <label><input type="checkbox" checked>Full-stack</label>
+    <Label><input type="radio" value="FE">FE</Label>
+</body>
+</html>
