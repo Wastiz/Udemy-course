@@ -22,5 +22,3 @@ function logger (){
 clearTimeout(timer);
 
 //Practise
-
-const btn = document.quer
