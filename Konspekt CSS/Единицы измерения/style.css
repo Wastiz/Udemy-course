@@ -4,6 +4,7 @@
 
 li{
     font-size: 80%;
+<<<<<<< HEAD
 }
 .overlay{
     width: 100vw;
@@ -13,4 +14,6 @@ li{
     top: 0;
     left: 0;
     opacity: 50%;
+=======
+>>>>>>> 755b7d20a641ede3ea9e0d77410e7c9b8dfb0c7e
 }

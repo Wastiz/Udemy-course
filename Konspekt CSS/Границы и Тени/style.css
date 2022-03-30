@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .example {
     width: 100px;
     height: 100px;
@@ -36,6 +37,26 @@
   
     box-shadow: inset 1px 2px 5px blue, inset -1px -2px 5px aqua;
   }
+=======
+.example{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px;
+    border: 2px solid black;
+    border-right: none;
+    border-left: yellow 5px solid;
+}
+.shadow{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px;
+}
+h1{
+    text-shadow: 1px 2px 5px gray ;
+}
+>>>>>>> 755b7d20a641ede3ea9e0d77410e7c9b8dfb0c7e
 /* Просто нужно помнить, что есть 8 вид границ. 
 Одним свойством можно задать и ширину и вид и цвет границы.
 Также, можно более тонко настраивать границы */

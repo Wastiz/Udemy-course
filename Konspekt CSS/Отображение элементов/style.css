@@ -1,9 +1,15 @@
 .first {
     display: none;
   }
+<<<<<<< HEAD
 /* Убирает элемент */
   .second {
     /* visibility: hidden; скрывает элемент */
+=======
+  
+  .second {
+    /* visibility: hidden; */
+>>>>>>> 755b7d20a641ede3ea9e0d77410e7c9b8dfb0c7e
     /* opacity: 0; */
     color: transparent;
   }
