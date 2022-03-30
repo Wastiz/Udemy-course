@@ -1,0 +1,16 @@
+.main{
+    font-size: 100%;
+}
+
+li{
+    font-size: 80%;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+}

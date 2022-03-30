@@ -1,0 +1,41 @@
+body{
+    height: 100px;
+}
+h4{
+    border: 1px solid red;
+}
+span{
+    border: 5px solid blue;
+    width: 10px;
+    height: 100px;
+    display: inline;
+    box-sizing: border-box;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+.testz{
+    border: 5px solid blue;
+    width: 10px;
+    height: 100px;
+    display: inline;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+.test2{
+    border: 5px solid blue;
+    width: 10px;
+    height: 100px;
+    display: inline;
+    box-sizing: border-box;
+    position: fixed
+}
+.test{
+    border: 5px solid blue;
+    width: 10px;
+    height: 100px;
+    display: inline;
+    box-sizing: border-box;
+    position: sticky
+}

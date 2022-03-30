@@ -1,0 +1,47 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+/* Этот псевдокласс работает при наведении курсора на элемент. */
+a:visited{
+    color: aqua;
+}
+/* Этот псевдокласс работает только когда пользователь переходил по этой ссылке. */
+a:active{
+    color: green;
+}
+/* Этот псевдокласс срабатывает когда пользователь зажал кнопку мыши и не отпускает */
+a:focus{
+    font-weight: bold;
+}
+/* Этот псевдокласс срабатывает, когда пользователь перемещается по странице с табом */
+p::first-letter{
+    font-size: 40px;
+}
+p::first-line{
+    text-decoration: underline;
+}
+/* Эти два псевдоэлемента отвечают за декорацию первой буквы и первой строки */
+p::selection{
+    background-color:yellow;
+    color: blue;
+    font-size: 40px;
+}
+/* Этот псевдоэлемент дает стилизировать выделение текста. Изменять можно только задний фон и цвет текста. */
+h1::before{
+    content: "This is a "
+}
+h1::after{
+    content: " TUTUTUTUTUTUTUT UTUTUTUTUTU";
+    text-decoration: inherit;
+}
+
+.list1 li:first-child{
+    color: blue;
+}
+.list1 li:last-child{
+    color: blue;
+}

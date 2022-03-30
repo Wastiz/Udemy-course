@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://ae01.alicdn.com/kf/Hfa0fce301dea4594b063c61583225af9U.jpg_140x140Q90.jpg_.webp" alt="Just image">
+    <p>Простой тег для вставки картинок. src - ссылка на картинку. alt - если картинка не прогружается, то высветится значение этого тега</p>
+    <p>Также атрибутами можно задать высоту и ширину</p>
+     <picture>
+         <img src="https://ae01.alicdn.com/kf/Hfa0fce301dea4594b063c61583225af9U.jpg_140x140Q90.jpg_.webp" alt="Не высветится потому что адресса нет">
+         <source media="(min-width: 1024px)" srcset="https://ae01.alicdn.com/kf/Hfa0fce301dea4594b063c61583225af9U.jpg_140x140Q90.jpg_.webp">
+         <source media="(min-width: 720px)" srcset="https://ae01.alicdn.com/kf/Hfa0fce301dea4594b063c61583225af9U.jpg_140x140Q90.jpg_.webp">
+    </picture>
+    <br>
+    <p>Этот тег является неким контейнером для картинок. При помощи атрибутов можно задавать при каких размерах экрана</p>
+    <p>будет появлятся картинка. Картинки могут быть любыми. Главное, чтобы был семантический смысл</p>
+    <figure>
+        <img src="https://ae01.alicdn.com/kf/Hfa0fce301dea4594b063c61583225af9U.jpg_140x140Q90.jpg_.webp" alt="Не высветится потому что адресса нет">
+        <figcaption>Описание этой картинки</figcaption>
+    </figure>
+    <p>является контейнером для картинки и описания картинки</p>
+    
+</body>
+</html>

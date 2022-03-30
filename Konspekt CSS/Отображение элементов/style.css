@@ -1,0 +1,10 @@
+.first {
+    display: none;
+  }
+/* Убирает элемент */
+  .second {
+    /* visibility: hidden; скрывает элемент */
+    /* opacity: 0; */
+    color: transparent;
+  }
+  

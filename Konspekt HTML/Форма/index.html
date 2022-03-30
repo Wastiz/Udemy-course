@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="script.js" name="SimpleForm" autocomplete="on">
+
+    </form>
+    <p>Главный тег для создания форм, в котором обрабатываются все поля. В него пишутся все элементы для заполнения</p>
+    <p>Имеет атрибуты action - отвечает за файл, который будет отправлятся с данными формы</p>
+    <p>Имеет атрибут autocomplete - это когда у пользователя будут варианты заполнения при повторном посещении сайта</p>
+    <p>Имеет атрибут name, чтобы можно было понять какая это форма при обработке</p>
+    <form action="script.js" name="SimpleForm2" autocomplete="on">
+        <fieldset>
+            <legend>Simple Form 2</legend>
+            <p>Как вам данный курс?</p>
+            <textarea name="course" id="course" cols="30" rows="10"></textarea>
+            <textarea name="course" id="course" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Please fill inputs</legend>
+            <label for="username">Username</label>
+            <input id="username" type="text">
+        </fieldset>
+    </form>
+    <p>Тег textarea имеет другой визуальный вид (больше чем у инпут) и имеет перенос строк.</p>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">Атрибуты тега textarea:</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>rows</td>
+            <td>Отвечает за высоту</td>
+        </tr>
+        <tr>
+            <td>cols</td>
+            <td>Отвечает за ширину</td>
+        </tr>
+        <tr>
+            <td>autofocus</td>
+            <td>Автоматически фокусирует поле, на которое добавляется текст</td> <!-- Если добавить несколько, то будет работать только первый -->
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>Делает поле недоступным</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>Поле остается активным, но его нельзя изменять</td>
+        </tr>
+        <tr>
+            <td>placeholder</td>
+            <td>Универсалтьный атрибут. Добавляет текст, который убирается при изменении</td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>Создает ограничение по символам</td>
+      </tr>
+      <tr>
+          <td>required</td>
+          <td>Тоде универсальный атрибут для полей. при этом атрибуте поле обязательно должно ыть заполнено</td>
+      </tr>
+    </table>
+    <p>fieldset - это обводка для формы, что делает UX лучше</p>
+    <p>legend - это может быть название формы, которая вставляется в обводку fieldset</p>
+    <p>label - это привязка к инпуту или textarea, при нажатии на label вы можете заполнять форму</p>
+    <hr>
+    <select name="selector" id="selector">
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+    </select>
+    <p>select - тег для поля с выпадающим списком</p>
+    <br>
+    <select name="" id="" multiple placeholder="Select">
+        <option value="BE">BE</option>
+        <option value="FE" label="FE"></option>
+        <option value="FS" selected>FS</option>
+        <option value="MN" disabled>MN</option>
+    </select>
+    <br>
+    <br>
+    <select placeholder="Select">
+        <optgroup label="Speciality"></optgroup>
+        <optgroup disabled>IDK</optgroup>
+    </select>
+    <p>Атрибут multiple дает возможность выбрать сразу несколько вариантов, но пр  этом он изменит свою визуальную форму</p>
+    <p>У optgroup есть два атрибута: disabled и label</p>
+    <p>Первый блокирует выбор нескольких опций, а второй добавляет label для этих опций</p>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">атрибуты option</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>value</td>
+            <td>Значение опции при отправке на сервер</td>
+        </tr>
+        <tr>
+            <td>label</td>
+            <td colspan="2">указание метки элемента списка</td>
+            <td>В таком случае закрывающий тег не нужен</td>
+        </tr>
+        <tr>
+            <td>selected</td>
+            <td>Выбор дефолтного элемента для списка</td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>блокировка для выбора</td>
+        </tr>
+    </table>
+</body>
+</html>
