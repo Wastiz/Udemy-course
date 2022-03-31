@@ -1,0 +1,74 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  border: 10px solid #7f00ff;
+}
+
+.flex-item {
+  padding: 10px;
+  font: 900 60px "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item-1 {
+  background-image: linear-gradient(45deg, #ff8177, #cf556c);
+}
+
+.item-2 {
+  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+
+.item-3 {
+  background: linear-gradient(45deg, #a6c0fe, #f68084);
+}
+
+.item-4 {
+  background: linear-gradient(45deg, #d4fc79, #96e6a1);
+}
+
+.item-5 {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.item-6 {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+
+.item-7 {
+  background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.item-8 {
+  background: linear-gradient(45deg, #e1eec3, #f05053);
+}
+
+/* Custom styles */
+.flex-container {
+  display: flex;
+}
+/* Итак, как мы знаем, мы можем задавать величины абсолютные и относительные. Но в флекс контейнере можно более гибко это настриваить */
+/* Когда мы не задаем величины, размер элементов подстраивается по контент (Цифры, строки и тд тп) */
+
+.flex-item {
+  /* flex-basis: 300px;
+  /* flex-grow: 1; равномерно распределяет оставшиеся пространство по главной оси в элементы */
+  flex: 1 0 300px;
+}
+
+.item-2 {
+  /* flex-grow: 2; Это значение можно давать и отдельным элементам. При значении два, свободное пространство будет уходит в два раза больше, чем остальным */
+  /* flex-shrink: 2; определяет сколько места готов отдать элемент, при сужении экрана. Также можно задать отдельным элементам */
+}
+
+.item-3 {
+  flex-shrink: 3;
+  /* flex-basis: 300px; Задает изначальную величину как width. но при column задает высоту */
+  /* flex: 1 0 300px; Объединяет все три функции. 1 - flex-flow 2 - flex-shrink, 3 - flex-basis ыф */
+}

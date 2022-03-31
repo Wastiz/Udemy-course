@@ -1,0 +1,73 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    border: 10px solid #7f00ff;
+  }
+  
+  .flex-item {
+    padding: 10px;
+    font: 900 60px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-1 {
+    background-image: linear-gradient(45deg, #ff8177, #cf556c);
+  }
+  
+  .item-2 {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+  }
+  
+  .item-3 {
+    background: linear-gradient(45deg, #a6c0fe, #f68084);
+  }
+  
+  .item-4 {
+    background: linear-gradient(45deg, #d4fc79, #96e6a1);
+  }
+  
+  .item-5 {
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+  }
+  
+  .item-6 {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  }
+  
+  .item-7 {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+  }
+  
+  .item-8 {
+    background: linear-gradient(45deg, #e1eec3, #f05053);
+  }
+  
+  /* Custom styles */
+
+  .flex-container {
+    display: flex; 
+    height: 100vh;
+    /* flex-flow: column wrap; Объединяет flex direction и flex wrap*/ 
+    flex-direction: column-reverse;
+    /* justify-content: flex-start; Элементы выравниваются от начала контейнера */
+    /* justify-content: flex-end; Элементы выравниваются под конец контейнера, при этом основная ось не меняется */
+    /* justify-content: center; Элементы выравниваются в центре контейнера */
+    /* justify-content: space-between; выравнивает элементы на всю ширину контейнера, но делает равные промежутки между ними */
+    /* justify-content: space-evenly; делает между элементами и контейнером равное расстояние */
+    /* align-items: stretch; растаягивает элементы во всю поперечную ось */
+    /* align-items: center; выравнивает элементы по центру вдоль поперечной оси */
+    /* align-items: baseline; похожа на flex-start, только когда у один из элементов будет больше, то это будет выравнивать по его значениям */
+    
+  }
+  
+  .flex-item {
+    /* width: 100px; */
+  }
+  
