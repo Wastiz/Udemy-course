@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+}
+.some{
+    width: 100px;
+    background-color: yellow;
+}
+
+.red{
+    width: 100px;
+    background-color: red;
+}
+.blue{
+    width: 100px;
+    background-color: blue;
+}
