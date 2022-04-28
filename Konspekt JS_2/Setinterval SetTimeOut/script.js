@@ -1,6 +1,6 @@
 const btn = document.querySelector("button");
 
-
+//Самое главное отличие это то, что setTimeout выполняется один раз, а интервал несколько
 
 const timer = setTimeout(function(){
     console.log('hello');
