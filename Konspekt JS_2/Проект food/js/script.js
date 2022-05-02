@@ -206,5 +206,46 @@ window.addEventListener('DOMContentLoaded', function() {
         ".menu .container",
          //Теперь можно добавлять другие классы и они тоже будут применяться к карточкам
     ).render();
+    
+    //Forms
 
+    const forms = document.querySelectorAll('form');
+    const message = {
+        loading: 'Loading',
+        success: 'Success',
+        failure: 'Failure',
+    };
+
+    forms.forEach(item => {
+        postData(item);
+    });
+
+    function postData(form) {
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const statusMessage = document.createElement('div');
+            statusMessage.classList.add('status');
+            statusMessage.textContent = message.loading;
+            form.append(statusMessage);
+            const request =  new XMLHttpRequest();
+            request.open('POST', 'server.php');
+            //request.setRequestHeader('Content-Type', 'multipart/form-data');
+            //Когда мы используем связку XMLHttpRequest + formData, тогда заголовок не надо делать, ведь он создается автоматически
+            const formData = new FormData(form); //Более упрощенный вариант для отправки данных с форм.
+            //в верстке в динамических элементов, с которых мы хотим отпраить данные ставим атрибут name
+            request.send(formData);
+            request.addEventListener('load', function(){
+                if(request.status === 200) {
+                    console.log(request.response);
+                    statusMessage.textContent = message.success;
+                    form.reset();
+                    setTimeout(function(){
+                        statusMessage.remove();
+                    }, 2000);
+                } else {
+                    statusMessage.textContent = message.failure;
+                }
+            });
+        });
+    }
 });
