@@ -11,9 +11,9 @@ const time = setTimeout(function(text){
 }, 2000, "Hello");
 // Тоже самое только с переменной внутри функции
 
-//const timerId = setTimeout(logger, 2000);
+const timerId = setInterval(logger, 2000);
 let i = 0;
-let timerId;
+// let timerId;
 function logger (){
     console.log("text");
     i++;
