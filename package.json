@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/wastiz/Udemy-course/issues"
   },
-  "homepage": "https://github.com/wastiz/Udemy-course#readme"
+  "homepage": "https://github.com/wastiz/Udemy-course#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
