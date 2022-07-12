@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <!-- Подключать можно по разному, но досточно прописать эти теги -->
+    <!-- Если нет инета, то лучше скачать boots trap и брать от туда нужны файлы -->
+    <!-- Здесь подрубаем через cdn -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Проверка работает ли bootstrap -->
+    <!-- Итак, создаем сетку для дальнейшей верстки -->
+    <!-- Сетка состоит из столбцов. Всего их 12 изначально -->
+    <!-- И в зависимости сколько столбцов мы сделали, столько изначальных столбцов они будут занимать -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--Например, щас мы сделали 1 столб и приписали ему, что он занимает 12 столбцов. это 1320px -->
+                    <h1 class="text-center text-white">Конспект по Bootstrap</h1>
+                    <!--Сейчас же мы сделали белое название по центру. Это как раз bootstrap классы, но разумеется можно использовать и свои.
+                    Все классы находятся на сайте, в разделе типография-->
+                    <div class="itd_play" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div type="button" class="itd-triangle">
+                        </div>
+                    </div>
+                    <a href="#footer" class="btn btn-itd btn-lg text-uppercase">Смотреть</a>
+                    <!--В href указали элемент, чтобы потом сделать плавную прокрутку-->
+                    <!--Просто продолжаем создавать элементы используя бутстрап классы-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-uppercase color1 mb-5">About me</h2>
+                    <!---Bootstrap класс mb-5 означает margin bottom. Таких классво тоже много со своими сокращениями-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/4762/4762232.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        Student of many course
+                    </h5>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/104/104093.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        Worked in google
+                    </h5>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/732/732068.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        Working in Microsoft
+                    </h5>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/1659/1659067.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        Many pet projects
+                    </h5>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/1001/1001371.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        His own notes
+                    </h5>
+                    <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="itd-circle">
+                        <img width="60px" src="https://cdn-icons-png.flaticon.com/128/25/25657.png" alt="no icon">
+                    </div>
+                    <h5 class='text-center'>
+                        His github
+                    </h5>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center color1">About my courses/notes</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <h3>HTML konspekt</h3>
+                    <div class="accordion accordion-flush" id="accordion1">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="flush-headingOne1">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne1">
+                                    Elements
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne1" data-bs-parent="#accordion1">
+                                <div class="accordion-body">You will learn all useful tags of HTML language</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo1">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo1">
+                                    Semantic
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo1" data-bs-parent="#accordion1">
+                                <div class="accordion-body">You will learm what is semantic and why is it important
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree1">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree1">
+                                    Crossbrowsing and adaptive website coding
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree1" data-bs-parent="#accordion1">
+                                <div class="accordion-body">You will learn how to make adaptive and crossbrowsing
+                                    website on real example</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <h3>HTML konspekt</h3>
+                    <div class="accordion accordion-flush" id="accordion2">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="flush-headingOne2">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne2">
+                                    Elements
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne2" data-bs-parent="#accordion2">
+                                <div class="accordion-body">You will learn all useful tags of HTML language</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo2">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo2">
+                                    Semantic
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo2" data-bs-parent="#accordion2">
+                                <div class="accordion-body">You will learm what is semantic and why is it important
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree2">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree2">
+                                    Crossbrowsing and adaptive website coding
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree2" data-bs-parent="#accordion2">
+                                <div class="accordion-body">You will learn how to make adaptive and crossbrowsing
+                                    website on real example</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <h3>HTML konspekt</h3>
+                    <div class="accordion accordion-flush" id="accordion3">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="flush-headingOne3">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne3">
+                                    Elements
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne3" data-bs-parent="#accordion3">
+                                <div class="accordion-body">You will learn all useful tags of HTML language</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo3">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo3">
+                                    Semantic
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo3" data-bs-parent="#accordion3">
+                                <div class="accordion-body">You will learm what is semantic and why is it important
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree3">
+                                <button class="accordion-button collapsed itd-accordion" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree3">
+                                    Crossbrowsing and adaptive website coding
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree3" data-bs-parent="#accordion3">
+                                <div class="accordion-body">You will learn how to make adaptive and crossbrowsing
+                                    website on real example</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <!--Задвая вверху href здесь же нужно просто индетификатор поставить тот же, что и в href-->
+        1
+    </footer>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hey, we have some cookies here. Please tap continue!
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Pleaaase!</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подрубаем через cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

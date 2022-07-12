@@ -1,0 +1,93 @@
+:root{ /*В css можно делать такую структуру с корнями, чтобы быстро использовать назначенные свойства */
+    --color1: rgba(255,176,3,1);/*Например, очень удобно записать цвета из цветовой палитры сайта и потом быстро их использовать где надо*/
+    --color2: rgba(107,31,177,1);
+}
+.color1{
+    color: var(--color1);
+}
+.bg1{
+    background-color: var(--color1);
+}
+.bg2{
+    background-color: var(--color2);
+}
+header, footer, section {
+    padding: 100px 0;
+}
+section{
+    padding: 50px 0;
+}
+header {
+    padding: 200px 0;
+}
+header, footer { /*Также не боимся использовать одни и те же селекторы по нескольку раз если свойства разные, то все они будут применяться, а если нет то по каскадности будут применяться последние свойства*/
+    background: rgb(107,31,177);
+    background: linear-gradient(90deg, rgba(107,31,177,1) 0%, rgba(9,9,121,1) 50%, rgba(255,176,3,1) 100%);
+}/* Щас я просто сделал градиент при помощи первого gradient generator Вот ссылка: https://cssgradient.io */
+.col-12{
+    display: flex;
+    flex-direction: column;
+}
+.itd_play{
+    background-color: blue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /*Это свойство пр наведении делает курсор как у кнопки*/
+    margin: 30px auto 30px;
+    transition: all 0.5s ease;
+}
+.itd_play:hover{
+    background-color: var(--color1);
+}
+.itd-triangle{
+    margin-right: -3px; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent white; /*Это выставлен прозрачный цвет*/
+    /*треугольник готов*/
+}
+.btn-itd{
+    display: block;
+    max-width: 200px;
+    margin: 0 auto; /*Выравниваем по центру*/
+    padding: 8px 30px;
+    color: var(--bs-white); /*В bootstrap тоже прописано дохрена переменных, которые мы можем использовать. Например белый цвет.*/
+    background-color: blue;
+}
+.btn-itd:hover{
+    background-color: var(--color1);
+    color: black;
+}
+.itd-circle {
+    margin: 0 auto 15px;
+    width: 110px;
+    height: 110px;
+    border: 5px solid var(--color2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: var(--color1);
+    border-radius: 4px;
+    margin: 15px auto 30px;
+}
+hr {
+    color: var(--color2);
+    height: 3px;
+    background-color: var(--color2);
+    opacity: 100%;
+}
+.itd-accordion{
+    border: 2px solid var(--color1);
+    border-radius: 10px;
+}
