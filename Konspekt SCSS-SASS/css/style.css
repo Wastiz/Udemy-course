@@ -1,0 +1,55 @@
+.item1, .item2, .item3 {
+  font-size: 18px;
+  color: #fff;
+}
+.item1:hover, .item2:hover, .item3:hover {
+  color: black;
+}
+
+.test {
+  text-align: center;
+}
+
+.menu {
+  float: right;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.description {
+  color: black;
+}
+.description:hover {
+  color: blue;
+}
+
+.description-tools {
+  float: right;
+  display: flex;
+}
+.description a {
+  text-decoration: none;
+}
+
+.about a {
+  color: #fff;
+}
+
+.item2::after {
+  content: 'something';
+}
+
+.item3 {
+  background-color: rgba(171, 52, 223, 0.9);
+}
